@@ -28,18 +28,18 @@ int evaluateExpression(const string& expression) {
 }
 
 void findExpression(int total, int currentNum, string expression) {
-    if (currentNum == 0) {
-        if (evaluateExpression(expression) == total && expression[0] != '+') {
+    if (currentNum == 10) {
+        if (evaluateExpression(expression) == total && expression[0] != '+' && expression[0] != '-') {
             cout << expression << "=" << total << endl;
         }
         return;
     }
 
-    findExpression(total, currentNum - 1, to_string(currentNum) + expression);
-    findExpression(total, currentNum - 1, "+" + to_string(currentNum) + expression);
-    findExpression(total, currentNum - 1, "-" + to_string(currentNum) + expression);
+    findExpression(total, currentNum + 1, to_string(currentNum) + expression);
+    findExpression(total, currentNum + 1, "+" + to_string(currentNum) + expression);
+    findExpression(total, currentNum + 1, "-" + to_string(currentNum) + expression);
 }
 
 int main() {
-    findExpression(200, 9, "");
+    findExpression(200, 0, "");
 }
