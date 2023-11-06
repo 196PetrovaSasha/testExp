@@ -1,0 +1,3 @@
+/Users/aleksandrapetrova/CLionProjects/testExp/cmake-build-debug/CMakeFiles/testExp.dir
+/Users/aleksandrapetrova/CLionProjects/testExp/cmake-build-debug/CMakeFiles/edit_cache.dir
+/Users/aleksandrapetrova/CLionProjects/testExp/cmake-build-debug/CMakeFiles/rebuild_cache.dir
